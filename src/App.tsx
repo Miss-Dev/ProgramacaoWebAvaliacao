@@ -23,7 +23,7 @@ function App() {
     console.log('*****************posts**********************')
     
     console.log(posts)
-    // Promise.resolve(posts).then(val => console.log(val))
+    
 
     return (
         <>
