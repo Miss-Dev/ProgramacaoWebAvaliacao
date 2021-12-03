@@ -1,0 +1,24 @@
+div{
+    justify-content: center;
+}
+
+h2{
+    color: #191970;
+}
+
+p{
+    color: #FF4500;
+
+}
+
+button{
+    border-radius: 3rem;
+    width: 7rem;
+    height: 2rem;
+    color: rgb(128,0,0);
+    background-color: rgb(176,224,230);
+}
+
+select{
+    background-color: rgb(176,224,230);
+}
