@@ -1,7 +1,9 @@
 import React, { Component, useState } from 'react';
-import { isTemplateExpression } from 'typescript';
+
 import API from './api';
-import './index.css'
+import './index.css';
+
+import Tabela  from './Components/Tabela';
 
 
 function App(){ 
@@ -85,12 +87,16 @@ function App(){
                 //condição de parada para não pegar mais de uma postagem por userId
                 a = 1
                 return(
-                    <><h2>Título: {String(Object.values(e)[2])}<br/></h2><p> Texto: {String(Object.values(e)[3])}</p></>
+                    <><h2>Título: {String(Object.values(e)[2])}<br/></h2><p> Texto: {String(Object.values(e)[3])}</p><br/><Tabela userid={String(Object.values(e)[0])} titulo={String(Object.values(e)[2])} body= {String(Object.values(e)[3])}/></>
                 );
                 
             }
-        })}
+        })       
         
+        }
+
+         
+       
         
     
     </>
